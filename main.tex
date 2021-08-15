@@ -1,16 +1,28 @@
 % !TEX program = xelatex
 
-\documentclass[12pt]{report}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage[paper=a4paper,left=4cm, right=2cm, top=3.5cm, bottom=3.5cm]{geometry}
 
 \usepackage{fontspec}
 \setmainfont{Liberation Sans}
 
-\usepackage[paper=a4paper,left=4cm, right=2cm, top=3.5cm, bottom=3.5cm]{geometry}
+\usepackage{titlesec}
+\titleformat*{\section}{\Large \bfseries \sffamily}
+\titleformat*{\subsection}{\large \itshape \bfseries \sffamily}
+\titleformat*{\subsubsection}{\normalsize \bfseries \sffamily}
 
 \begin{document}
+
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+\renewcommand{\labelitemi}{$\circ$}
+
 \newgeometry{top=2cm, bottom=2cm, left=4.5cm, right=4.5cm}
 \begin{titlepage}
     \begin{center}
@@ -64,8 +76,30 @@
     \begin{center}
         \large ANNÉE ACADÉMIQUE 2020/2021 \normalsize
     \end{center}
-    
+
 \end{titlepage}
+\restoregeometry
+
+\renewcommand{\baselinestretch}{1.15}
+
+\setmainfont{Liberation Serif}
+
+\section{Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque mollis nisl, sagittis faucibus sapien tempor eget. In sollicitudin, lectus a pharetra suscipit, dui erat laoreet elit, nec lobortis turpis sapien in tellus. Nunc ullamcorper justo a nunc auctor, pellentesque viverra arcu lobortis. Curabitur fringilla lacinia ante, id eleifend eros interdum vitae. In hendrerit eget elit non convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi vehicula eget odio nec hendrerit. Etiam vitae tristique risus. Nulla facilisi. Donec facilisis metus ut ante vulputate, eget maximus ante commodo. Donec vitae enim sit amet leo dapibus vehicula vel ut felis. Pellentesque malesuada commodo est ornare rhoncus. Sed sollicitudin tempus mi vitae feugiat. Etiam laoreet elit justo, vitae lacinia est pharetra a. Nunc rhoncus purus consectetur, ultricies velit ultrices, accumsan lectus. 
+
+\subsection{Sub-section}
+
+Fusce a tellus ultricies, auctor purus vel, pharetra ex. Nulla facilisi. Maecenas hendrerit turpis ac dolor interdum, sit amet ullamcorper arcu accumsan. Sed eros ante, sodales vel quam lacinia, tincidunt molestie turpis. Ut a dolor lacinia urna rhoncus semper. Curabitur maximus consequat nunc sed molestie. Duis egestas sed erat sit amet iaculis. Praesent vestibulum, tortor non molestie efficitur, tortor ex consequat mi, sed sollicitudin diam nunc vel orci. Mauris dapibus leo ligula, nec tempor mauris consequat sit amet. Sed vehicula molestie mauris, at aliquet libero porta eu. 
+
+\subsubsection{Sub-sub-section}
+
+In cursus et risus rutrum imperdiet. Nulla consectetur neque et metus tempus tristique. Vestibulum dictum lacinia risus eu fringilla. Donec sed ultricies urna, sed convallis metus. In risus sem, sagittis sed nibh malesuada, tincidunt finibus mi. Vestibulum eu est elit. Suspendisse fermentum tortor quis metus elementum, a ullamcorper nisl imperdiet.
+
+Aliquam nec lacinia felis. Nunc mauris tellus, elementum in congue iaculis, laoreet id tellus. Etiam sed dapibus tortor. Nulla vitae quam vitae quam posuere facilisis et id tortor. In tempor nibh nec ex imperdiet, et facilisis mauris pharetra. Cras sagittis semper maximus. Nunc quis dolor ex. Nunc egestas porttitor ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tellus in dolor scelerisque pretium at at eros. Nullam laoreet pulvinar sapien. Donec gravida consectetur euismod. Cras sodales arcu et vestibulum tristique. Maecenas non dictum nunc. Aliquam elementum ligula quis velit lobortis ultrices blandit nec est.
+
+In in tempus magna. Pellentesque risus odio, ultrices id porta eu, congue sed libero. Ut hendrerit egestas libero non pharetra. Vestibulum porttitor lectus eu dui lobortis scelerisque. Vivamus sollicitudin feugiat diam, ac hendrerit erat dapibus sed. Pellentesque non nisl pellentesque, lobortis ipsum sit amet, dictum neque. Ut eu mi mattis, pulvinar tortor eget, vehicula diam. Sed ac laoreet ex. Etiam a ligula suscipit, gravida mauris vitae, vestibulum tortor. In hac habitasse platea dictumst. Cras euismod tortor tempor eros luctus elementum. Nam scelerisque vel turpis vel posuere. Cras pellentesque maximus est, sed convallis purus consequat ac. In bibendum feugiat justo, sit amet tempus eros ornare eu.
+
 
 \end{document}
 
