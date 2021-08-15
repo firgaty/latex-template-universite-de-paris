@@ -1,0 +1,72 @@
+% !TEX program = xelatex
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}
+
+\usepackage[paper=a4paper,left=4cm, right=2cm, top=3.5cm, bottom=3.5cm]{geometry}
+
+\begin{document}
+\newgeometry{top=2cm, bottom=2cm, left=4.5cm, right=4.5cm}
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{resources/img/logo_uni.jpg}
+   
+        % \vspace*{0.5cm}
+
+        \Large Université de Paris \normalsize
+
+        \vspace{1cm}
+        \large FACULTÉ DE SCIENCES \normalsize
+        
+        \vspace{0.2cm}
+        \renewcommand{\baselinestretch}{1.3}
+        \large
+        UFRs d'Informatique et de Mathématiques\\
+        Directeurs: ... et ...
+        \normalsize
+        \renewcommand{\baselinestretch}{1.0}
+        
+        \vspace{2cm}
+        \large RAPPORT DE STAGE DE MASTER 2 \normalsize
+        
+        \vspace{1.5cm}
+        \renewcommand{\baselinestretch}{1.8}
+        \Large 
+        \textbf{INTITULÉ DU STAGE}
+        \normalsize
+        \renewcommand{\baselinestretch}{1.0}
+    \end{center}
+    
+    \vfill
+    \begin{flushleft}
+    \renewcommand{\baselinestretch}{1.3}
+    \large
+    \textit{Tuteur pédagogique: ...\\
+    Tuteur en entreprise: ...}
+    \normalsize
+    \renewcommand{\baselinestretch}{1.0}
+    \end{flushleft}
+    \vspace{1cm}
+    
+    \begin{flushright}
+        \large
+        \textit{Étudiant: ...}
+        \normalsize
+    \end{flushright}
+    
+    \vspace{1cm}
+    
+    \begin{center}
+        \large ANNÉE ACADÉMIQUE 2020/2021 \normalsize
+    \end{center}
+    
+\end{titlepage}
+
+\end{document}
+
+
