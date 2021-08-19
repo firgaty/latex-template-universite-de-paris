@@ -434,24 +434,34 @@ $endif$
 
 \setmainfont{Liberation Serif}
 
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
 
 $for(include-before)$
 $include-before$
-
 $endfor$
+
 $if(toc)$
 $if(toc-title)$
 \renewcommand*\contentsname{$toc-title$}
 $endif$
+{
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
 $endif$
 $if(lof)$
 \listoffigures
 $endif$
 $if(lot)$
 \listoftables
-$endif$
-$if(linestretch)$
-\setstretch{$linestretch$}
 $endif$
 $if(has-frontmatter)$
 \mainmatter
